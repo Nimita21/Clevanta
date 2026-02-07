@@ -65,15 +65,28 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
+                 <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
-                        <i class="fa-solid fa-bars text-2xl"></i>
+                    <button id="mobileMenuButton" class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i id="menuIcon" class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
+                <a href="expertise.html" class="block text-slate-600 hover:text-primary font-medium transition-colors text-base py-2">Expertise</a>
+                <a href="philosophy.html" class="block text-slate-600 hover:text-primary font-medium transition-colors text-base py-2">Philosophy</a>
+                <a href="about.html" class="block text-slate-600 hover:text-primary font-medium transition-colors text-base py-2">About</a>
+                <a href="contact.html" class="block bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md text-center mt-4">
+                    Contact Us
+                </a>
+            </nav>
+        </div>
     </header>
+
 
     <!-- Main Content -->
     <main id="main-content" class="pt-32 pb-24 max-w-[1440px] mx-auto px-8">
