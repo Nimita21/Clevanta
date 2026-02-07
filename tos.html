@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="pt-32 pb-24 max-w-[1440px] mx-auto px-8">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="mb-16 max-w-4xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold mb-6 border border-blue-100">
+                <i class="fa-solid fa-scale-balanced"></i> Legal Agreement
+            </div>
+            <h1 class="text-5xl font-bold text-slate-900 mb-6 tracking-tight">Terms of Service</h1>
+            <p class="text-lg text-slate-600 mb-4 max-w-2xl leading-relaxed">
+                These terms govern your use of Clevanta Consulting's services. Please read them carefully before engaging with our platform or services.
+            </p>
+            <p class="text-sm text-slate-400 font-medium">Effective Date: January 15, 2024</p>
+        </section>
+
+        <div class="flex flex-col lg:flex-row gap-16 relative">
+            
+            <!-- Sidebar Navigation -->
+            <aside id="sidebar" class="hidden lg:block w-64 flex-shrink-0">
+                <div class="sticky top-32 space-y-8">
+                    <div>
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 px-3">Contents</h3>
+                        <nav class="space-y-1">
+                            <a href="#acceptance" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Acceptance of Terms</a>
+                            <a href="#definitions" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Definitions</a>
+                            <a href="#services" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Our Services</a>
+                            <a href="#obligations" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">User Obligations</a>
+                            <a href="#ip" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Intellectual Property</a>
+                            <a href="#payment" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Payment Terms</a>
+                            <a href="#confidentiality" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Confidentiality</a>
+                            <a href="#warranties" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Warranties & Disclaimers</a>
+                            <a href="#liability" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Limitation of Liability</a>
+                            <a href="#indemnification" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Indemnification</a>
+                            <a href="#termination" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Termination</a>
+                            <a href="#dispute" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Dispute Resolution</a>
+                            <a href="#general" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">General Provisions</a>
+                            <a href="#contact" class="sidebar-link block px-3 py-2 text-sm text-slate-600 border-l-2 border-transparent hover:text-brand-600 hover:border-brand-200 transition-all rounded-r-md">Contact Information</a>
+                        </nav>
+                    </div>
+
+                    <div class="bg-slate-900 rounded-xl p-6 text-white shadow-lg">
+                        <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mb-4">
+                            <i class="fa-regular fa-life-ring text-white"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Need Clarification?</h4>
+                        <p class="text-sm text-slate-300 mb-4">Our legal team is here to help.</p>
+                        <a href="mailto:legal@clevanta.com" class="text-sm text-brand-400 hover:text-brand-300 font-medium flex items-center gap-2">
+                            legal@clevanta.com <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Legal Content -->
+            <div class="flex-1 max-w-4xl space-y-16">
+                
+                <!-- Acceptance -->
+                <section id="acceptance" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-4">Acceptance of Terms</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        By accessing or using Clevanta Consulting's website, services, or engaging with our team ("Services"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, you may not access or use our Services.
+                        <br><br>
+                        These Terms constitute a legally binding agreement between you (the "Client," "User," or "you") and Clevanta Consulting LLC ("Clevanta," "we," "us," or "our").
+                    </p>
+                    <div class="bg-amber-50 border border-amber-100 rounded-xl p-5 flex gap-4">
+                        <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900 text-sm mb-1">Important</h4>
+                            <p class="text-sm text-amber-800">By using our Services, you represent that you are at least 18 years old and have the legal capacity to enter into binding contracts.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Definitions -->
+                <section id="definitions" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Definitions</h2>
+                    <p class="text-slate-600 mb-6">For purposes of these Terms, the following definitions apply:</p>
+                    <div class="grid gap-4">
+                        <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm mb-2">"Services"</h4>
+                            <p class="text-sm text-slate-600">All consulting, advisory, design, development, and related professional services provided by Clevanta, including but not limited to enterprise strategy, architecture consulting, UX/UI design, and IT consulting.</p>
+                        </div>
+                        <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm mb-2">"Client Materials"</h4>
+                            <p class="text-sm text-slate-600">Any data, content, information, or materials provided by you to Clevanta in connection with the Services.</p>
+                        </div>
+                        <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                            <h4 class="font-bold text-slate-900 text-sm mb-2">"Deliverables"</h4>
+                            <p class="text-sm text-slate-600">Work products, documents, designs, code, reports, or other materials created by Clevanta as part of the Services.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Our Services -->
+                <section id="services" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Our Services</h2>
+                    <p class="text-slate-600 mb-8">Clevanta provides professional consulting services tailored to enterprise clients. Our Services include:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-8">
+                        <div class="border border-slate-200 p-5 rounded-xl hover:border-brand-200 hover:shadow-sm transition-all">
+                            <i class="fa-solid fa-chess-knight text-brand-600 mb-3 text-xl"></i>
+                            <h4 class="font-bold text-slate-900 mb-2">Enterprise Strategy</h4>
+                            <p class="text-sm text-slate-600">Strategic planning, roadmapping, and business transformation consulting.</p>
+                        </div>
+                        <div class="border border-slate-200 p-5 rounded-xl hover:border-brand-200 hover:shadow-sm transition-all">
+                            <i class="fa-solid fa-sitemap text-brand-600 mb-3 text-xl"></i>
+                            <h4 class="font-bold text-slate-900 mb-2">Architecture Consulting</h4>
+                            <p class="text-sm text-slate-600">Technical architecture design, system modernization, and cloud strategy.</p>
+                        </div>
+                        <div class="border border-slate-200 p-5 rounded-xl hover:border-brand-200 hover:shadow-sm transition-all">
+                            <i class="fa-solid fa-pen-ruler text-brand-600 mb-3 text-xl"></i>
+                            <h4 class="font-bold text-slate-900 mb-2">UX/UI Design</h4>
+                            <p class="text-sm text-slate-600">User research, interface design, prototyping, and design systems.</p>
+                        </div>
+                        <div class="border border-slate-200 p-5 rounded-xl hover:border-brand-200 hover:shadow-sm transition-all">
+                            <i class="fa-solid fa-code text-brand-600 mb-3 text-xl"></i>
+                            <h4 class="font-bold text-slate-900 mb-2">IT Consulting</h4>
+                            <p class="text-sm text-slate-600">Technology advisory, vendor selection, and implementation oversight.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 border border-blue-100 rounded-xl p-5 flex gap-4">
+                        <i class="fa-solid fa-circle-info text-blue-500 mt-1"></i>
+                        <p class="text-sm text-blue-800"><strong>Service Modifications:</strong> We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time. We will provide reasonable notice of material changes that affect active engagements.</p>
+                    </div>
+                </section>
+
+                <!-- User Obligations -->
+                <section id="obligations" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">User Obligations</h2>
+                    <p class="text-slate-600 mb-6">As a user of our Services, you agree to:</p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex gap-4">
+                            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Provide Accurate Information</h4>
+                                <p class="text-sm text-slate-600 mt-1">Supply complete, accurate, and truthful information about your business, requirements, and objectives.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Cooperate in Good Faith</h4>
+                                <p class="text-sm text-slate-600 mt-1">Respond to requests for information, feedback, and approvals in a timely manner to facilitate project progress.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="w-6 h-6 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-green-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Respect Intellectual Property</h4>
+                                <p class="text-sm text-slate-600 mt-1">Not use our Deliverables in ways that infringe on third-party rights or violate applicable laws.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="bg-red-50 border border-red-100 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-8 h-8 rounded-full bg-red-100 flex items-center justify-center">
+                                <i class="fa-solid fa-ban text-red-500"></i>
+                            </div>
+                            <h4 class="font-bold text-red-900">Prohibited Activities</h4>
+                        </div>
+                        <p class="text-sm text-red-800 mb-3">You may not:</p>
+                        <ul class="text-sm text-red-800 space-y-1 ml-4">
+                            <li>• Reverse engineer or copy our methodologies without authorization</li>
+                            <li>• Use our Services for illegal or unethical purposes</li>
+                            <li>• Share confidential information disclosed by Clevanta with third parties</li>
+                            <li>• Misrepresent your affiliation with Clevanta</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Intellectual Property -->
+                <section id="ip" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Intellectual Property</h2>
+                    <p class="text-slate-600 mb-6">Intellectual property rights in connection with our Services are allocated as follows:</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-3">Clevanta IP</h4>
+                            <p class="text-sm text-slate-600 mb-4">All pre-existing intellectual property, methodologies, frameworks, tools, and know-how owned by Clevanta remain our exclusive property. This includes but is not limited to our consulting methodologies, proprietary tools, and templates.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-3">Client IP</h4>
+                            <p class="text-sm text-slate-600 mb-4">You retain all rights to your Client Materials and any pre-existing intellectual property you provide to us.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-slate-900 mb-3">Deliverables</h4>
+                            <p class="text-sm text-slate-600">Upon full payment, you receive a license to use the Deliverables for your internal business purposes. Unless otherwise agreed in writing, Clevanta retains ownership of the underlying intellectual property and may reuse general concepts, methodologies, and learnings in future work.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Payment Terms -->
+                <section id="payment" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Payment Terms</h2>
+                    <p class="text-slate-600 mb-6">Payment terms are established in individual engagement agreements and typically include:</p>
+                    
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 space-y-4 mb-6">
+                        <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+                            <span class="text-sm font-semibold text-slate-700">Payment Schedule</span>
+                            <span class="text-sm text-slate-600">Net 30 days from invoice date</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+                            <span class="text-sm font-semibold text-slate-700">Late Payment Fee</span>
+                            <span class="text-sm text-slate-600">1.5% per month on overdue amounts</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-slate-700">Accepted Methods</span>
+                            <span class="text-sm text-slate-600">Wire transfer, ACH, check</span>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-600">Clevanta reserves the right to suspend Services if payment is more than 30 days overdue. You remain responsible for all fees incurred prior to suspension.</p>
+                </section>
+
+                <!-- Confidentiality -->
+                <section id="confidentiality" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Confidentiality</h2>
+                    <p class="text-slate-600 mb-6">Both parties agree to maintain the confidentiality of any proprietary or sensitive information disclosed during the engagement. This obligation survives termination of the Services.</p>
+                    
+                    <div class="bg-slate-900 text-white rounded-xl p-6">
+                        <h4 class="font-bold mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-lock"></i> Confidential Information Includes:
+                        </h4>
+                        <ul class="text-sm space-y-2 text-slate-300">
+                            <li>• Business strategies, financial data, and trade secrets</li>
+                            <li>• Technical specifications, designs, and source code</li>
+                            <li>• Client lists, pricing information, and marketing plans</li>
+                            <li>• Any information marked as "Confidential" or reasonably understood to be confidential</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Warranties & Disclaimers -->
+                <section id="warranties" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Warranties & Disclaimers</h2>
+                    <p class="text-slate-600 mb-6"><strong>Our Warranty:</strong> Clevanta warrants that Services will be performed in a professional and workmanlike manner consistent with industry standards.</p>
+                    
+                    <div class="bg-amber-50 border border-amber-200 rounded-xl p-6">
+                        <h4 class="font-bold text-amber-900 mb-3">Disclaimer</h4>
+                        <p class="text-sm text-amber-800">EXCEPT AS EXPRESSLY PROVIDED HEREIN, CLEVANTA MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. WE DO NOT GUARANTEE SPECIFIC BUSINESS OUTCOMES OR RESULTS.</p>
+                    </div>
+                </section>
+
+                <!-- Limitation of Liability -->
+                <section id="liability" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Limitation of Liability</h2>
+                    <p class="text-slate-600 mb-6">To the maximum extent permitted by law:</p>
+                    
+                    <div class="space-y-4">
+                        <p class="text-sm text-slate-600 leading-relaxed">CLEVANTA'S TOTAL LIABILITY ARISING OUT OF OR RELATED TO THESE TERMS OR THE SERVICES SHALL NOT EXCEED THE TOTAL FEES PAID BY YOU TO CLEVANTA IN THE 12 MONTHS PRECEDING THE EVENT GIVING RISE TO LIABILITY.</p>
+                        
+                        <p class="text-sm text-slate-600 leading-relaxed">IN NO EVENT SHALL CLEVANTA BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST REVENUE, OR LOST DATA, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+                    </div>
+                </section>
+
+                <!-- Indemnification -->
+                <section id="indemnification" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Indemnification</h2>
+                    <p class="text-slate-600 mb-4">You agree to indemnify, defend, and hold harmless Clevanta and its officers, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorneys' fees) arising from:</p>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-circle text-brand-600 text-xs mt-1.5"></i>
+                            <span>Your breach of these Terms</span>
+                        </li>
+                        <li class="flex gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-circle text-brand-600 text-xs mt-1.5"></i>
+                            <span>Your violation of any law or third-party rights</span>
+                        </li>
+                        <li class="flex gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-circle text-brand-600 text-xs mt-1.5"></i>
+                            <span>Your use of the Deliverables in a manner not authorized by these Terms</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Termination -->
+                <section id="termination" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Termination</h2>
+                    <p class="text-slate-600 mb-6">Either party may terminate an engagement:</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-4 mb-6">
+                        <div class="border border-slate-200 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-900 mb-2">For Convenience</h4>
+                            <p class="text-sm text-slate-600">With 30 days' written notice to the other party.</p>
+                        </div>
+                        <div class="border border-slate-200 rounded-xl p-5">
+                            <h4 class="font-bold text-slate-900 mb-2">For Cause</h4>
+                            <p class="text-sm text-slate-600">Immediately upon material breach by the other party.</p>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-600">Upon termination, you must pay for all Services performed through the termination date. Sections relating to confidentiality, intellectual property, warranties, and liability survive termination.</p>
+                </section>
+
+                <!-- Dispute Resolution -->
+                <section id="dispute" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Dispute Resolution</h2>
+                    <p class="text-slate-600 mb-6">In the event of a dispute:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
+                                <span class="text-brand-600 font-bold text-sm">1</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-1">Informal Negotiation</h4>
+                                <p class="text-sm text-slate-600">The parties will attempt to resolve the dispute through good-faith negotiation for 30 days.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
+                                <span class="text-brand-600 font-bold text-sm">2</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-1">Mediation</h4>
+                                <p class="text-sm text-slate-600">If negotiation fails, the parties agree to mediation under the rules of the American Arbitration Association.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-8 h-8 rounded-full bg-brand-100 flex items-center justify-center flex-shrink-0">
+                                <span class="text-brand-600 font-bold text-sm">3</span>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 mb-1">Binding Arbitration</h4>
+                                <p class="text-sm text-slate-600">Any unresolved disputes shall be settled by binding arbitration in accordance with the Commercial Arbitration Rules of the AAA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- General Provisions -->
+                <section id="general" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">General Provisions</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-slate-900 mb-2">Governing Law</h4>
+                            <p class="text-sm text-slate-600">These Terms are governed by the laws of the State of Delaware, without regard to conflict of law principles.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-slate-900 mb-2">Entire Agreement</h4>
+                            <p class="text-sm text-slate-600">These Terms, together with any engagement agreements, constitute the entire agreement between the parties and supersede all prior agreements.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-slate-900 mb-2">Amendments</h4>
+                            <p class="text-sm text-slate-600">Clevanta may modify these Terms at any time. Material changes will be communicated via email or website notice at least 30 days before taking effect.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-slate-900 mb-2">Severability</h4>
+                            <p class="text-sm text-slate-600">If any provision of these Terms is found unenforceable, the remaining provisions will continue in full force and effect.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Information -->
+                <section id="contact" class="scroll-mt-32">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Contact Information</h2>
+                    <p class="text-slate-600 mb-6">For questions about these Terms, please contact us:</p>
+                    
+                    <div class="bg-gradient-to-br from-brand-600 to-brand-700 rounded-xl p-8 text-white">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brand-100 mb-0.5">Email</p>
+                                        <a href="mailto:legal@clevanta.com" class="font-semibold hover:underline">legal@clevanta.com</a>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brand-100 mb-0.5">Phone</p>
+                                        <a href="tel:+1-555-123-4567" class="font-semibold hover:underline">+1 (630)-452-9883</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fa-solid fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brand-100 mb-0.5">Address</p>
+                                        <p class="font-semibold">Clevanta Consulting</p>
+                                       =
+                                        <p class="text-sm">New Jersey, USA</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brand-100 mb-0.5">Hours</p>
+                                        <p class="text-sm">Mon-Fri: 9:00 AM - 6:00 PM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+     <!-- Footer -->
+   <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                        <i class="fa-solid fa-layer-group text-sm"></i>
+                    </div>
+                    <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Strategic clarity for the modern enterprise. We build relationships, not just software.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Capabilities Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                    <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                    <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                    <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                    <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                        <span>Jersey City, NJ</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                        <span>hello@clevanta.com</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                        <span>+1 (630)-452-9883</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

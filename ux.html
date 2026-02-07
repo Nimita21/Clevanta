@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="max-w-2xl">
+                    <span class="inline-block px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-semibold tracking-wide uppercase mb-6">Core Capability</span>
+                    <h1 class="font-display text-4xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                        Design that <br>
+                        <span class="text-indigo-600">Delights.</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-lg">
+                        Creating intuitive, human-centered design thinking into the enterprise, ensuring systems are not just functional, but usable and human-centered.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://www.behance.net/gallery/239815103/Nimita-Priyadarshis-UI-UX-Portfolio/modules/1381110349" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition-colors">
+                            View Our Work <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="expertise.html" class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition-colors">
+                            Design Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="relative lg:h-[600px] flex items-center justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-indigo-100 rounded-full blur-2xl opacity-60"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-100 rounded-full blur-2xl opacity-60"></div>
+                        
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+                             <div class="h-[400px] overflow-hidden">
+                                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/631225d204-08866b66fe30247ecbf1.png" alt="top down view of colorful design swatches, pantone books, and sketches on a white desk, professional design studio aesthetic, high quality photography" />
+                            </div>
+                        </div>
+
+                        <!-- Floating Card -->
+                        <div class="absolute -bottom-6 -left-6 glass-card p-4 rounded-xl shadow-lg flex items-start gap-4 max-w-xs animate-bounce" style="animation-duration: 3s;">
+                            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 flex-shrink-0">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm">User-Centered</h3>
+                                <p class="text-xs text-slate-500 mt-1">Every design decision backed by user research and testing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section id="values" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Design with Purpose</h2>
+                <p class="text-slate-600 text-lg">Great design isn't just about aesthetics. It's about solving real problems for real people while advancing business objectives.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-rose-500 mb-6">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Empathy First</h3>
+                    <p class="text-slate-600 leading-relaxed">We start by deeply understanding your users' needs, pain points, and behaviors through research and observation.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-blue-500 mb-6">
+                        <i class="fa-solid fa-bolt text-xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Iterate Rapidly</h3>
+                    <p class="text-slate-600 leading-relaxed">Fast prototyping and continuous testing help us validate ideas quickly and refine designs based on real feedback.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-emerald-500 mb-6">
+                        <i class="fa-solid fa-chart-pie text-xl"></i>
+                    </div>
+                    <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Measure Impact</h3>
+                    <p class="text-slate-600 leading-relaxed">Every design decision is validated with metrics. We track user satisfaction, task completion, and business outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-16">
+                <span class="text-indigo-600 font-semibold tracking-wider text-sm uppercase">What We Offer</span>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 mt-2">UX/UI Design Services</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Service 1 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">User Research & Strategy</h3>
+                        <p class="text-slate-600 mb-4">Deep dive into user needs through interviews, surveys, and analytics. We uncover insights that drive design decisions and product strategy.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> User interviews & contextual inquiry
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Persona development & journey mapping
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Competitive analysis & heuristic evaluation
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Interface Design</h3>
+                        <p class="text-slate-600 mb-4">Beautiful, functional interfaces that balance aesthetics with usability. We create pixel-perfect designs that work across all devices.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Web & mobile app design
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Responsive & adaptive layouts
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Accessibility (WCAG 2.1 AA compliance)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Prototyping & Testing</h3>
+                        <p class="text-slate-600 mb-4">Interactive prototypes that bring designs to life. We validate concepts with real users before development begins.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Low & high-fidelity prototypes
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Usability testing & A/B testing
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Design iteration based on feedback
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="flex gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-teal-600">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Design Systems</h3>
+                        <p class="text-slate-600 mb-4">Scalable design systems that ensure consistency across products. We create component libraries and style guides for efficient development.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Component libraries & pattern libraries
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Design tokens & style guides
+                            </li>
+                            <li class="flex items-center text-sm text-slate-500">
+                                <i class="fa-solid fa-check text-green-500 mr-2 text-xs"></i> Documentation & governance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-display text-3xl font-bold text-slate-900 mb-4">Our Design Process</h2>
+                <p class="text-slate-600 text-lg">A proven methodology that balances creativity with structure, ensuring designs that are both innovative and practical.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line -->
+                <div class="hidden md:block absolute top-10 left-0 right-0 h-0.5 bg-slate-100 -z-10 w-[80%] mx-auto"></div>
+
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+                    <!-- Step 1 -->
+                    <div class="relative group">
+                        <div class="w-20 h-20 mx-auto bg-purple-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border-4 border-white shadow-sm">
+                            <span class="text-2xl font-bold text-purple-600">1</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">Discover</h3>
+                        <p class="text-xs text-slate-500 px-2">Research users, analyze competitors, define problems</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative group">
+                        <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border-4 border-white shadow-sm">
+                            <span class="text-2xl font-bold text-blue-600">2</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">Define</h3>
+                        <p class="text-xs text-slate-500 px-2">Synthesize insights, create personas, map journeys</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative group">
+                        <div class="w-20 h-20 mx-auto bg-indigo-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border-4 border-white shadow-sm">
+                            <span class="text-2xl font-bold text-indigo-600">3</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">Ideate</h3>
+                        <p class="text-xs text-slate-500 px-2">Brainstorm solutions, sketch concepts, explore options</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative group">
+                        <div class="w-20 h-20 mx-auto bg-teal-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border-4 border-white shadow-sm">
+                            <span class="text-2xl font-bold text-teal-600">4</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">Prototype</h3>
+                        <p class="text-xs text-slate-500 px-2">Build interactive mockups, test with users, iterate</p>
+                    </div>
+
+                    <!-- Step 5 -->
+                    <div class="relative group">
+                        <div class="w-20 h-20 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 border-4 border-white shadow-sm">
+                            <span class="text-2xl font-bold text-green-600">5</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 mb-2">Deliver</h3>
+                        <p class="text-xs text-slate-500 px-2">Finalize designs, hand off to dev, support launch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 bg-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your User Experience?</h2>
+            <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Let's collaborate to create designs that your users will love and your business will benefit from.</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+               
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-base font-medium rounded-lg text-white hover:bg-white/10 transition-colors">
+                    Schedule a Call
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                            <i class="fa-solid fa-layer-group text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Strategic clarity for the modern enterprise. We build relationships, not just software.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                        <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                        <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                        <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                            <span>Jersey City, NJ</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                            <span>hello@clevanta.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                            <span>+1 (630)-452-9883</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

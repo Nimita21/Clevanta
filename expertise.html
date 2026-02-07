@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-20 h-[600px] w-full overflow-hidden">
+        <div class="absolute inset-0 bg-primary/80 z-10"></div>
+        <div class="absolute inset-0 z-0">
+             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Team collaborating" class="w-full h-full object-cover opacity-60 mix-blend-overlay">
+        </div>
+        
+        <div class="relative z-20 max-w-[1440px] mx-auto px-8 h-full flex flex-col justify-center">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                    Our <span class="text-cyan-400">Expertise</span>
+                </h1>
+                <p class="text-xl text-slate-200 leading-relaxed max-w-2xl">
+                    Deep capabilities across enterprise strategy, architecture, design, and IT consulting. We bring senior-level expertise to every engagement.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Enterprise Strategy -->
+    <section id="strategy-section" class="py-24 bg-white">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="order-1 lg:order-1">
+                    <span class="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">Enterprise Strategy</span>
+                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Aligning Technology with Business Vision</h2>
+                    
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Our enterprise strategy practice helps organizations navigate complex digital transformations with confidence. We work at the intersection of business goals and technology capabilities, ensuring your roadmap is both ambitious and achievable.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        From C-suite advisory to portfolio rationalization, we bring senior-level strategic thinking that considers not just what's possible, but what's right for your organization's unique context and culture.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Digital Transformation Roadmaps</h4>
+                                <p class="text-sm text-slate-500">Multi-year strategic plans that balance innovation with operational stability.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Technology Portfolio Optimization</h4>
+                                <p class="text-sm text-slate-500">Rationalize systems, reduce complexity, and focus investment on strategic capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Executive Advisory & Coaching</h4>
+                                <p class="text-sm text-slate-500">Trusted counsel for CTOs, CIOs, and technology leaders navigating change.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-lg p-6 border border-slate-100">
+                        <h5 class="text-xs font-bold text-primary uppercase mb-2">Case Highlight</h5>
+                        <p class="text-sm text-slate-600">Guided a Fortune 500 financial services firm through a 3-year digital transformation, resulting in 40% reduction in technical debt and $12M in annual cost savings.</p>
+                    </div>
+                </div>
+
+                <div class="order-2 lg:order-2 h-full">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
+                        <img src="images/meeting2.jpg.webp" alt="Business strategy meeting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Architecture Consulting -->
+    <section id="architecture-section" class="py-24 bg-slate-50">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="order-2 lg:order-1 h-full">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
+                        <img src="images/meeting3.jpg.avif" alt="Architecture planning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <span class="inline-block px-4 py-1.5 bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">Architecture Consulting</span>
+                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Building Scalable, Resilient Systems</h2>
+                    
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Our architecture practice designs systems that grow with your business. We bring deep technical expertise combined with pragmatic business sense to create architectures that are robust, maintainable, and aligned with your strategic goals.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        From cloud migration strategies to microservices design, we help you build the technical foundation that enables innovation while managing risk and complexity.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Enterprise Architecture Design</h4>
+                                <p class="text-sm text-slate-500">Comprehensive architectural blueprints for complex enterprise systems.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Cloud Strategy & Migration</h4>
+                                <p class="text-sm text-slate-500">AWS, Azure, and GCP architecture with security and compliance built-in.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Technical Debt Assessment</h4>
+                                <p class="text-sm text-slate-500">Identify, prioritize, and remediate architectural issues holding you back.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm">
+                        <h5 class="text-xs font-bold text-primary uppercase mb-2">Case Highlight</h5>
+                        <p class="text-sm text-slate-600">Designed and led implementation of a microservices architecture for a healthcare platform, improving system reliability from 95% to 99.9% uptime.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: UX/UI Design -->
+    <section id="ux-section" class="py-24 bg-white">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="order-1 lg:order-1">
+                    <span class="inline-block px-4 py-1.5 bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">UX/UI & Design</span>
+                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Human-Centered Enterprise Design</h2>
+                    
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        We bring design thinking into the enterprise. Our UX/UI practice ensures that complex systems are not just functional, but intuitive, accessible, and delightful to use. We bridge the gap between technical capability and human need.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        From design systems to user research, we help organizations embed design excellence into their culture and processes, creating experiences that users love and that drive business outcomes.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Enterprise Design Systems</h4>
+                                <p class="text-sm text-slate-500">Scalable component libraries and design standards for consistency at scale.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">User Research & Testing</h4>
+                                <p class="text-sm text-slate-500">Evidence-based design decisions grounded in real user needs and behaviors.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Accessibility & Compliance</h4>
+                                <p class="text-sm text-slate-500">WCAG-compliant designs that work for all users, including those with disabilities.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-lg p-6 border border-slate-100">
+                        <h5 class="text-xs font-bold text-primary uppercase mb-2">Case Highlight</h5>
+                        <p class="text-sm text-slate-600">Created a comprehensive design system for a global retail brand, reducing design-to-development time by 60% and improving user satisfaction scores by 35%.</p>
+                    </div>
+                </div>
+
+                <div class="order-2 lg:order-2 h-full">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
+                        <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Design process" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: IT Consulting -->
+    <section id="it-section" class="py-24 bg-slate-50">
+        <div class="max-w-[1440px] mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="order-2 lg:order-1 h-full">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="IT Consulting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">IT Consulting</span>
+                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Pragmatic Technology Guidance</h2>
+                    
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Our IT consulting practice provides the steady hand needed to navigate complex technology decisions. From vendor selection to implementation oversight, we bring objectivity, experience, and a focus on outcomes.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        We help you cut through vendor hype, assess options objectively, and make decisions that align with your strategic goals and operational realities.
+                    </p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Technology Vendor Selection</h4>
+                                <p class="text-sm text-slate-500">Objective evaluation and RFP management for major technology investments.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">Implementation Oversight</h4>
+                                <p class="text-sm text-slate-500">PMO support and quality assurance for critical IT initiatives.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary text-sm mb-1">IT Operating Model Design</h4>
+                                <p class="text-sm text-slate-500">Organizational design, governance, and process optimization for IT teams.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg p-6 border border-slate-200 shadow-sm">
+                        <h5 class="text-xs font-bold text-primary uppercase mb-2">Case Highlight</h5>
+                        <p class="text-sm text-slate-600">Led vendor selection and implementation oversight for a $25M ERP replacement, delivering on-time and 15% under budget.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach Section -->
+    <section id="approach-section" class="py-24 bg-primary text-white">
+        <div class="max-w-[1440px] mx-auto px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4">Our Approach</h2>
+            <p class="text-slate-300 max-w-2xl mx-auto mb-16">
+                A proven methodology built on relationship-driven growth and thoughtful execution.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-0.5 bg-slate-700 -z-0"></div>
+
+                <!-- Step 1 -->
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">1</div>
+                    <h3 class="font-bold text-lg mb-3">Listen & Understand</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed px-4">Deep discovery to understand your context, challenges, and aspirations.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">2</div>
+                    <h3 class="font-bold text-lg mb-3">Analyze & Design</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed px-4">Collaborative design of solutions that fit your organization's reality.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">3</div>
+                    <h3 class="font-bold text-lg mb-3">Execute & Deliver</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed px-4">Hands-on implementation with clear milestones and continuous feedback.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">4</div>
+                    <h3 class="font-bold text-lg mb-3">Sustain & Grow</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed px-4">Knowledge transfer and ongoing partnership to ensure lasting impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="py-20 bg-gradient-to-br from-blue-600 to-cyan-500">
+        <div class="max-w-[1440px] mx-auto px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Transform Your Enterprise?</h2>
+            <p class="text-xl text-blue-50 mb-10 max-w-2xl mx-auto">
+                Let's discuss how our expertise can help you achieve your strategic goals.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 font-semibold px-8 py-3.5 rounded-lg hover:bg-slate-50 transition-colors shadow-lg">Schedule a Consultation</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                            <i class="fa-solid fa-layer-group text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Strategic clarity for the modern enterprise. We build relationships, not just software.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                        <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                        <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                        <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                            <span>Jersey City, NJ</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                            <span>hello@clevanta.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                            <span>+1 (630)-452-9883</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

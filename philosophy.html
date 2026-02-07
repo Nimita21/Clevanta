@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-20 h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/267bf57389-98c7b79f38dae395e29b.png" alt="modern corporate office interior dark blue tint moody lighting glass walls empty conference room" />
+            <div class="absolute inset-0 bg-slate-900/70 mix-blend-multiply"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/20 to-slate-900/80"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-100 text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-sm">
+                Our Philosophy
+            </span>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Thoughtful Leadership,<br>
+                <span class="text-blue-400">Lasting Relationships</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto font-light leading-relaxed">
+                We believe in the power of calm, deliberate action. Our approach is rooted in deep listening, strategic thinking, and genuine partnership.
+            </p>
+        </div>
+    </section>
+
+    <!-- What We Stand For Section -->
+    <section id="philosophy-details" class="py-24 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">What We Stand For</h2>
+                <p class="text-slate-600">Our philosophy shapes every engagement, every decision, and every relationship we build.</p>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Item 1 -->
+                <div class="relative pl-8 border-l-4 border-blue-600 group">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Relationship-Driven Growth</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        We don't believe in transactional consulting. Every engagement is an opportunity to build a lasting partnership. We invest in understanding your organization's culture, challenges, and aspirations because we know that sustainable success comes from deep, trust-based relationships.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Our clients become partners. We celebrate your wins, learn from setbacks together, and remain committed to your long-term success even after projects conclude.
+                    </p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative pl-8 border-l-4 border-blue-600 group">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Thoughtful, Calm Leadership</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        In a world of constant urgency and noise, we bring a different energy. We believe the best decisions come from clarity, not chaos. Our consultants are senior practitioners who've learned that thoughtful analysis and calm execution consistently outperform reactive scrambling.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        We create space for reflection, ask the hard questions gently, and help you see through complexity to what truly matters. Our presence is steady, our counsel measured, and our commitment unwavering.
+                    </p>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative pl-8 border-l-4 border-blue-600 group">
+                    <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-700 transition-colors">Pragmatic Excellence</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        We pursue excellence, but we're pragmatists at heart. Perfect is the enemy of good, and we know that real-world constraints—budget, timeline, organizational capacity—are not obstacles but the context in which great work happens.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Our recommendations are always grounded in your reality. We design solutions you can actually implement, with your team, in your environment, within your constraints.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section id="core-values" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Our Core Values</h2>
+                <p class="text-slate-600">These principles guide our work and define who we are as consultants and partners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-6">
+                        <i class="fa-regular fa-circle-check text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Integrity First</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We tell you what you need to hear, not what you want to hear. Our advice is always honest, objective, and in your best interest.
+                    </p>
+                </div>
+
+                <!-- Value Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-6">
+                        <i class="fa-solid fa-users-viewfinder text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Collaborative Spirit</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        We work with you, not for you. Your team's insights and expertise are essential to our shared success.
+                    </p>
+                </div>
+
+                <!-- Value Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-6">
+                        <i class="fa-regular fa-lightbulb text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-3">Continuous Learning</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Technology and business evolve rapidly. We stay current, curious, and committed to bringing you the latest thinking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calm in the Storm Section -->
+    <section id="calm-storm" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img class="w-full h-auto max-h-[500px] object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/27ff999119-747aee9f6fbbf5d7e8e2.png" alt="diverse team brainstorming in modern office with sticky notes on glass wall focused and engaged" />
+                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-900/10 to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="w-full lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">The Calm in the Storm</h2>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Enterprise transformation is inherently stressful. Budgets are tight, timelines are aggressive, and stakeholders have competing priorities. In this environment, panic and reactivity are easy. Calm, strategic leadership is rare.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        That's where we come in. Our consultants bring decades of experience navigating complex organizational change. We've seen the patterns, weathered the storms, and learned that the best path forward is rarely the most obvious one.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        We create psychological safety for difficult conversations. We ask "why" when everyone else is rushing to "how." We help you slow down to speed up, ensuring that the decisions you make today serve you well tomorrow.
+                    </p>
+
+                    <div class="bg-slate-50 border-l-4 border-slate-300 p-6 rounded-r-lg">
+                        <p class="text-slate-700 italic mb-4">
+                            "The best consultants don't just solve problems—they help you see problems differently. Clevanta brings that rare combination of technical depth and human wisdom."
+                        </p>
+                        <div class="text-sm font-semibold text-slate-900">— CTO, Fortune 500 Financial Services</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Partner With You (Dark Section) -->
+    <section id="process" class="py-24 bg-[#0B1120] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4">How We Partner With You</h2>
+                <p class="text-slate-400">Our engagement model is designed for collaboration, transparency, and mutual success.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                        We Listen First
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Every engagement begins with deep discovery. We spend time understanding your organization's history, culture, technical landscape, and strategic goals before proposing solutions.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        We interview stakeholders, review documentation, and immerse ourselves in your context. Only then do we design our approach.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                        We Co-Create Solutions
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        You know your business better than we ever will. Our role is to bring external perspective, technical expertise, and proven frameworks—but the solutions we build together are always yours.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        We facilitate workshops, lead design sessions, and ensure your team is engaged and empowered throughout the process.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                        We Transfer Knowledge
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Our goal is not to create dependency but to build your internal capability. We document our work thoroughly, train your team, and ensure you can sustain and evolve what we build together.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        When we leave, you should feel more capable, not less.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-800/50 border border-slate-700 p-8 rounded-xl hover:bg-slate-800 transition-colors">
+                    <h3 class="text-xl font-bold mb-4 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-blue-500 rounded-full"></span>
+                        We Stay Connected
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Our relationships don't end when projects do. We check in, celebrate milestones, and remain available as trusted advisors as your needs evolve.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Many of our clients become long-term partners, returning for new challenges and referring us to their networks.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Big Quote Section -->
+    <section id="quote-section" class="py-24 bg-white border-b border-slate-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="text-blue-600 text-5xl mb-8 opacity-80">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-medium text-slate-800 leading-relaxed mb-6">
+                In a world obsessed with speed, we choose depth. In a culture of constant disruption, we offer stability. In an industry of quick fixes, we build lasting solutions.
+            </h2>
+            <p class="text-slate-500 font-medium">The Clevanta Philosophy</p>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section id="bottom-cta" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Experience the Difference</h2>
+            <p class="text-slate-600 mb-10 max-w-2xl mx-auto">
+                If our philosophy resonates with you, let's start a conversation. We'd love to learn about your challenges and explore how we might work together.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-[#0F4C75] hover:bg-[#093554] text-white px-8 py-3 rounded text-base font-semibold transition-colors shadow-md">
+                    Schedule a Conversation
+                </a>
+                <a href="expertise.html" class="bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 px-8 py-3 rounded text-base font-semibold transition-colors shadow-sm">
+                    Learn About Our Expertise
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Footer -->
+   <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Brand -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                        <i class="fa-solid fa-layer-group text-sm"></i>
+                    </div>
+                    <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Strategic clarity for the modern enterprise. We build relationships, not just software.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+
+            <!-- Capabilities Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                    <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                    <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                    <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Links -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                    <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                        <span>Jersey City, NJ</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                        <span>hello@clevanta.com</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                        <span>+1 (630)-452-9883</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+            <div class="flex gap-6 mt-4 md:mt-0">
+                <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

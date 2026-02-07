@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.55)); }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-20 h-[600px] flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+             <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/54e809a2bd-e71521a66aa90b52a99e.png" alt="professional business team collaborating in a modern office environment, moody lighting, dark overlay style, cinematic shot" />
+             <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 border border-white/30 text-white text-xs font-semibold tracking-wider uppercase mb-6 backdrop-blur-sm">
+                About Clevanta
+            </span>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                Senior Expertise, <br>
+                <span class="text-brand-500">Human Connection</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                We're a team of seasoned consultants who believe that the best solutions emerge from genuine partnerships and deep expertise.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="space-y-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif">Our Story</h2>
+                    
+                    <div class="space-y-6 text-gray-600 leading-relaxed">
+                        <p>
+                            Clevanta is a family-founded consulting firm built on experience, trust, and thoughtful leadership.
+                        </p>
+                        <p>
+                            Founded by Rajeev Priyadarshi and co-led with his daughter Nimita Priyadarshi, Clevanta blends senior enterprise strategy and architecture expertise with modern UX/UI and design thinking. What began as a shared vision between generations has grown into a consulting practice focused on clarity, calm leadership, and relationship-driven growth.
+                        </p>
+                        <p>
+                            Rajeev brings decades of experience in enterprise systems, digital transformation, and strategic IT leadership. Nimita brings a human-centered design perspective, ensuring technology solutions are intuitive, accessible, and aligned with real user needs.
+                        </p>
+                        <p>
+                            Together, they created Clevanta to help organizations move forward with confidence—where systems are not just built to scale, but designed to serve.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image/Stats -->
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl h-[500px]">
+                        <img class="w-full h-full object-cover" src="images/family.PNG" alt="father and daughter business partners high fiving in a bright modern office, casual professional attire, warm lighting, candid moment" />
+                    </div>
+                    
+                    <!-- Floating Stats -->
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-4">What Our Clients Say</h2>
+                <p class="text-lg text-gray-600">We measure our success by the lasting impact we create for our clients.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-brand-100 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg" alt="Jennifer Martinez" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Jennifer Martinez</h4>
+                            <p class="text-xs text-gray-500 uppercase">CTO, Global Retail Corp</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">"Clevanta helped us navigate a complex cloud migration that other firms said was impossible. Their calm, methodical approach and deep technical expertise gave us confidence throughout the journey. Two years later, we're still working with them."</p>
+                    <div class="flex text-brand-500 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-brand-100 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" alt="Robert Chen" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Robert Chen</h4>
+                            <p class="text-xs text-gray-500 uppercase">VP Strategy, FinTech Startup</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">"What sets Clevanta apart is their genuine investment in our success. They don't just deliver reports—they roll up their sleeves and work alongside our team. The architecture they designed has scaled beautifully as we've grown 10x."</p>
+                    <div class="flex text-brand-500 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-brand-100 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" alt="Amanda Foster" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Amanda Foster</h4>
+                            <p class="text-xs text-gray-500 uppercase">Chief Digital Officer, Healthcare System</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">"The UX transformation Clevanta led fundamentally changed how our patients interact with our digital services. Their human-centered approach and attention to accessibility set a new standard for our organization."</p>
+                    <div class="flex text-brand-500 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:border-brand-100 transition-colors">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" alt="Marcus Johnson" class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Marcus Johnson</h4>
+                            <p class="text-xs text-gray-500 uppercase">CIO, Manufacturing Enterprise</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">"Clevanta brought clarity to our IT chaos. Their strategic roadmap gave us a clear path forward, and their hands-on support during implementation ensured we actually achieved our goals. They're trusted advisors, not just consultants."</p>
+                    <div class="flex text-brand-500 text-xs gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-serif mb-6">Ready to Work Together?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Let's start a conversation about your challenges and explore how Clevanta can help you achieve your strategic goals.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-slate-800 transition-all shadow-lg hover:shadow-xl">
+                    Schedule a Consultation
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                            <i class="fa-solid fa-layer-group text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Strategic clarity for the modern enterprise. We build relationships, not just software.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                        <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                        <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                        <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                            <span>Jersey City, NJ</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                            <span>hello@clevanta.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                            <span>+1 (630)-452-9883</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

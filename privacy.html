@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clevanta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#164e63', // Dark slate blue/teal
+                        secondary: '#0e7490', // Lighter teal
+                        dark: '#0f172a', // Very dark slate
+                        light: '#f8fafc', // Very light gray
+                        accent: '#e0f2fe', // Pale blue
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Clevanta</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="expertise.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Expertise</a>
+                    <a href="philosophy.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">Philosophy</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary font-medium transition-colors text-sm">About</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="contact.html" class="bg-primary hover:bg-slate-800 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="hero" class="w-full bg-brand-50/30 pt-16 pb-12 px-16">
+        <div class="max-w-6xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100/50 border border-blue-200 text-blue-700 text-xs font-semibold mb-6">
+                <i class="fa-solid fa-shield-halved text-[10px]"></i>
+                Legal
+            </div>
+            <h1 class="text-4xl font-bold text-brand-900 mb-4 tracking-tight">Privacy Policy</h1>
+            <p class="text-gray-600 max-w-2xl text-lg leading-relaxed">
+                Your privacy matters to us. This policy explains how Clevanta Consulting collects, uses, and protects your personal information.
+            </p>
+            <p class="text-xs text-gray-400 mt-4 font-medium uppercase tracking-wide">Last Updated: February 5, 2026</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="main-content" class="w-full px-16 py-12">
+        <div class="max-w-6xl mx-auto flex gap-16">
+            
+            <!-- Sidebar / Table of Contents -->
+            <aside id="sidebar" class="w-64 flex-shrink-0 hidden lg:block">
+                <div class="sticky-toc">
+                    <div class="bg-gray-50 rounded-xl p-6 border border-gray-100 mb-6">
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">Contents</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#overview" class="text-sm text-brand-600 font-medium hover:text-brand-700 block">Overview</a></li>
+                            <li><a href="#info-collect" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Information We Collect</a></li>
+                            <li><a href="#how-use" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">How We Use Information</a></li>
+                            <li><a href="#sharing" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Information Sharing</a></li>
+                            <li><a href="#security" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Data Security</a></li>
+                            <li><a href="#retention" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Data Retention</a></li>
+                            <li><a href="#rights" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Your Rights</a></li>
+                            <li><a href="#cookies" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Cookies & Tracking</a></li>
+                            <li><a href="#third-party" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Third-Party Services</a></li>
+                            <li><a href="#international" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">International Transfers</a></li>
+                            <li><a href="#children" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Children's Privacy</a></li>
+                            <li><a href="#changes" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Policy Changes</a></li>
+                            <li><a href="#contact" class="text-sm text-gray-600 hover:text-brand-600 transition-colors block">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-brand-900 rounded-xl p-6 text-white relative overflow-hidden group cursor-pointer">
+                        <div class="absolute top-0 right-0 -mt-2 -mr-2 w-16 h-16 bg-brand-800 rounded-full opacity-50 blur-xl"></div>
+                        <i class="fa-regular fa-circle-question text-2xl mb-3 block"></i>
+                        <h4 class="font-semibold mb-1">Questions?</h4>
+                        <p class="text-xs text-gray-400 mb-4 leading-relaxed">Contact our privacy team for clarification.</p>
+                        <div class="flex items-center text-xs font-medium text-brand-200 group-hover:text-white transition-colors">
+                            privacy@clevanta.com <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <div id="content-body" class="flex-1 max-w-3xl">
+                
+                <!-- Overview -->
+                <section id="overview" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Overview</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Clevanta Consulting ("we," "us," or "our") is committed to protecting your privacy and ensuring transparency in how we handle your personal information. This Privacy Policy describes our practices concerning the collection, use, disclosure, and protection of information we receive through our website, services, and business interactions.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        By using our services or providing us with your information, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with our practices, please do not use our services or provide us with your personal information.
+                    </p>
+                </section>
+
+                <!-- Information We Collect -->
+                <section id="info-collect" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Information We Collect</h2>
+                    <p class="text-gray-600 mb-6">We collect information in several ways to provide and improve our services:</p>
+                    
+                    <div class="bg-blue-50/50 border border-blue-100 rounded-xl p-6 mb-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <i class="fa-regular fa-user text-blue-600 mt-1"></i>
+                            <h3 class="font-semibold text-gray-900">Information You Provide</h3>
+                        </div>
+                        <ul class="space-y-3 ml-8">
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Contact Information:</strong> Name, email address, phone number, company name, job title</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Professional Information:</strong> Business requirements, project details, technical specifications</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Communication Data:</strong> Messages, feedback, and correspondence with our team</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-blue-500 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Payment Information:</strong> Billing details, transaction history (processed securely through third-party providers)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 border border-gray-100 rounded-xl p-6">
+                        <div class="flex items-start gap-3 mb-4">
+                            <i class="fa-solid fa-bolt text-gray-600 mt-1"></i>
+                            <h3 class="font-semibold text-gray-900">Information Collected Automatically</h3>
+                        </div>
+                        <ul class="space-y-3 ml-8">
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-gray-400 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Usage Data:</strong> Pages visited, time spent, navigation patterns, referring URLs</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-gray-400 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Device Information:</strong> IP address, browser type, operating system, device identifiers</span>
+                            </li>
+                            <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-gray-400 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Location Data:</strong> General geographic location based on IP address</span>
+                            </li>
+                             <li class="flex items-start gap-2 text-sm text-gray-600">
+                                <i class="fa-solid fa-check text-gray-400 mt-1 text-xs"></i>
+                                <span><strong class="text-gray-800">Cookies & Tracking:</strong> Session data, preferences, analytics information</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- How We Use Information -->
+                <section id="how-use" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">How We Use Your Information</h2>
+                    <p class="text-gray-600 mb-6">We use the information we collect for legitimate business purposes, including:</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mb-3">
+                                <i class="fa-solid fa-briefcase text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Service Delivery</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Providing consulting services, project management, and client support</p>
+                        </div>
+                         <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mb-3">
+                                <i class="fa-regular fa-comments text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Communication</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Responding to inquiries, sending updates, and maintaining client relationships</p>
+                        </div>
+                         <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mb-3">
+                                <i class="fa-solid fa-chart-line text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Service Improvement</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Analyzing usage patterns to enhance our offerings and user experience</p>
+                        </div>
+                         <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mb-3">
+                                <i class="fa-solid fa-shield-halved text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Security & Compliance</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Protecting against fraud, ensuring legal compliance, and maintaining security</p>
+                        </div>
+                         <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-orange-50 flex items-center justify-center text-orange-500 mb-3">
+                                <i class="fa-solid fa-bullhorn text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Marketing</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Sending relevant content, newsletters, and service updates (with opt-out option)</p>
+                        </div>
+                         <div class="border border-gray-100 rounded-lg p-5 hover:border-blue-200 hover:shadow-sm transition-all">
+                            <div class="w-8 h-8 rounded-full bg-green-50 flex items-center justify-center text-green-600 mb-3">
+                                <i class="fa-solid fa-scale-balanced text-sm"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 text-sm mb-1">Legal Obligations</h4>
+                            <p class="text-xs text-gray-500 leading-relaxed">Complying with legal requirements, contracts, and regulatory obligations</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Information Sharing -->
+                <section id="sharing" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Information Sharing and Disclosure</h2>
+                    <p class="text-gray-600 mb-6">We do not sell your personal information. We may share your information only in the following circumstances:</p>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50/30 p-5 rounded-lg border-l-4 border-blue-500">
+                            <h4 class="text-sm font-bold text-gray-900 mb-1">Service Providers</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">We work with trusted third-party vendors who assist in delivering our services (e.g., hosting, analytics, payment processing). These providers are contractually obligated to protect your data and use it only for specified purposes.</p>
+                        </div>
+                        <div class="bg-purple-50/30 p-5 rounded-lg border-l-4 border-purple-500">
+                            <h4 class="text-sm font-bold text-gray-900 mb-1">Business Transfers</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity. We will notify you of any such change and provide options regarding your data.</p>
+                        </div>
+                        <div class="bg-green-50/30 p-5 rounded-lg border-l-4 border-green-500">
+                            <h4 class="text-sm font-bold text-gray-900 mb-1">Legal Requirements</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">We may disclose information when required by law, court order, or government request, or to protect our rights, property, or safety, or that of others.</p>
+                        </div>
+                        <div class="bg-pink-50/30 p-5 rounded-lg border-l-4 border-pink-400">
+                            <h4 class="text-sm font-bold text-gray-900 mb-1">With Your Consent</h4>
+                            <p class="text-xs text-gray-600 leading-relaxed">We may share information with third parties when you explicitly consent or direct us to do so.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Data Security -->
+                <section id="security" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Data Security</h2>
+                    <p class="text-gray-600 mb-8">We implement industry-standard security measures to protect your information from unauthorized access, disclosure, alteration, or destruction:</p>
+                    
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white border border-gray-100 shadow-sm rounded-xl p-6 text-center">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 mb-2">Encryption</h4>
+                            <p class="text-[11px] text-gray-500 leading-tight">Data encrypted in transit (TLS/SSL) and at rest</p>
+                        </div>
+                        <div class="bg-white border border-gray-100 shadow-sm rounded-xl p-6 text-center">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                                <i class="fa-solid fa-fingerprint"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 mb-2">Access Controls</h4>
+                            <p class="text-[11px] text-gray-500 leading-tight">Strict authentication and authorization protocols</p>
+                        </div>
+                        <div class="bg-white border border-gray-100 shadow-sm rounded-xl p-6 text-center">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 text-blue-600">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                            <h4 class="text-sm font-bold text-gray-900 mb-2">Monitoring</h4>
+                            <p class="text-[11px] text-gray-500 leading-tight">Continuous security monitoring and incident response</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border border-yellow-100 rounded-lg p-4 flex gap-3 items-start">
+                        <i class="fa-solid fa-triangle-exclamation text-yellow-500 mt-1"></i>
+                        <div>
+                            <p class="text-xs text-yellow-800 font-medium">Important</p>
+                            <p class="text-xs text-yellow-700 mt-1">While we implement robust security measures, no system is completely secure. We cannot guarantee absolute security of your information transmitted to our services.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Data Retention -->
+                <section id="retention" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Data Retention</h2>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                        We retain your personal information only as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.
+                    </p>
+                    <p class="text-gray-600 mb-4 text-sm">Retention periods vary based on:</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start gap-2 text-sm text-gray-600 ml-4">
+                            <i class="fa-solid fa-circle text-[4px] mt-2 text-gray-400"></i>
+                            <span>The nature of the information and how it is used</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-600 ml-4">
+                            <i class="fa-solid fa-circle text-[4px] mt-2 text-gray-400"></i>
+                            <span>Legal, regulatory, or contractual obligations</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-600 ml-4">
+                            <i class="fa-solid fa-circle text-[4px] mt-2 text-gray-400"></i>
+                            <span>Active business relationships and ongoing projects</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm text-gray-600 ml-4">
+                            <i class="fa-solid fa-circle text-[4px] mt-2 text-gray-400"></i>
+                            <span>Tax, accounting, and audit requirements</span>
+                        </li>
+                    </ul>
+                    <p class="text-gray-600 text-sm">When data is no longer needed, we securely delete or anonymize it.</p>
+                </section>
+
+                <!-- Your Rights -->
+                <section id="rights" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Your Rights</h2>
+                    <p class="text-gray-600 mb-6">Depending on your location, you may have the following rights regarding your personal information:</p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-magnifying-glass text-brand-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-sm text-gray-900 mb-1">Access</h4>
+                                <p class="text-xs text-gray-600">Request a copy of the personal information we hold about you</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-pen text-brand-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-sm text-gray-900 mb-1">Correction</h4>
+                                <p class="text-xs text-gray-600">Request correction of inaccurate or incomplete information</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-trash text-brand-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-sm text-gray-900 mb-1">Deletion</h4>
+                                <p class="text-xs text-gray-600">Request deletion of your personal information (subject to legal obligations)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-ban text-brand-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-sm text-gray-900 mb-1">Opt-Out</h4>
+                                <p class="text-xs text-gray-600">Unsubscribe from marketing communications at any time</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 p-4 bg-gray-50 rounded-lg">
+                            <i class="fa-solid fa-download text-brand-600 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-sm text-gray-900 mb-1">Data Portability</h4>
+                                <p class="text-xs text-gray-600">Receive your data in a structured, commonly used format</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Cookies -->
+                <section id="cookies" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Cookies & Tracking Technologies</h2>
+                    <p class="text-gray-600 mb-6 text-sm">We use cookies and similar tracking technologies to enhance your experience and gather analytics data.</p>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-100 rounded-xl p-6">
+                        <h4 class="font-semibold text-gray-900 mb-4">Types of Cookies We Use:</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <span class="bg-white px-2 py-1 rounded text-xs font-mono text-brand-600">Essential</span>
+                                <p class="text-xs text-gray-700 flex-1">Required for website functionality and security</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-white px-2 py-1 rounded text-xs font-mono text-purple-600">Analytics</span>
+                                <p class="text-xs text-gray-700 flex-1">Help us understand how visitors interact with our site</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <span class="bg-white px-2 py-1 rounded text-xs font-mono text-pink-600">Marketing</span>
+                                <p class="text-xs text-gray-700 flex-1">Used to deliver relevant advertisements and track campaign effectiveness</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-4">You can control cookies through your browser settings. Note that disabling cookies may affect site functionality.</p>
+                    </div>
+                </section>
+
+                <!-- Third Party -->
+                <section id="third-party" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Third-Party Services</h2>
+                    <p class="text-gray-600 mb-4 text-sm">Our website may contain links to third-party websites or integrate third-party services. We are not responsible for the privacy practices of these external parties. We encourage you to review their privacy policies.</p>
+                </section>
+
+                <!-- International Transfers -->
+                <section id="international" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">International Data Transfers</h2>
+                    <p class="text-gray-600 text-sm">Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable laws.</p>
+                </section>
+
+                <!-- Children's Privacy -->
+                <section id="children" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Children's Privacy</h2>
+                    <p class="text-gray-600 text-sm">Our services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us immediately.</p>
+                </section>
+
+                <!-- Changes -->
+                <section id="changes" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Changes to This Privacy Policy</h2>
+                    <p class="text-gray-600 mb-4 text-sm">We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by:</p>
+                    <ul class="space-y-2 ml-6 mb-4">
+                        <li class="text-sm text-gray-600">• Posting the updated policy on our website</li>
+                        <li class="text-sm text-gray-600">• Updating the "Last Updated" date</li>
+                        <li class="text-sm text-gray-600">• Sending you an email notification (for significant changes)</li>
+                    </ul>
+                    <p class="text-gray-600 text-sm">Your continued use of our services after changes indicates acceptance of the updated policy.</p>
+                </section>
+
+                <!-- Contact -->
+                <section id="contact" class="mb-12">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Us</h2>
+                    <p class="text-gray-600 mb-6 text-sm">If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                    
+                    <div class="bg-brand-900 rounded-xl p-8 text-white">
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-200 mb-3">Email</h4>
+                                <p class="text-sm font-medium">privacy@clevanta.com</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-200 mb-3">Phone</h4>
+                                <p class="text-sm font-medium">+1 (630)-452-9883</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-200 mb-3">Address</h4>
+                                <p class="text-sm"><br>Jersey City, NJ</p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-semibold uppercase tracking-wider text-brand-200 mb-3">Response Time</h4>
+                                <p class="text-sm">We aim to respond within 48 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+     <!-- Footer -->
+     <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 rounded flex items-center justify-center text-white">
+                            <i class="fa-solid fa-layer-group text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg text-white">Clevanta Consulting</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Strategic clarity for the modern enterprise. We build relationships, not just software.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Capabilities Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Capabilities</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="enterprise.html" class="hover:text-cyan-400 transition-colors">Enterprise Strategy</a></li>
+                        <li><a href="architecture.html" class="hover:text-cyan-400 transition-colors">Architecture Consulting</a></li>
+                        <li><a href="ux.html" class="hover:text-cyan-400 transition-colors">UX/UI Design</a></li>
+                        <li><a href="it.html" class="hover:text-cyan-400 transition-colors">IT Consulting</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Company</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+                        <li><a href="philosophy.html" class="hover:text-cyan-400 transition-colors">Our Philosophy</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contact</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-cyan-500"></i>
+                            <span>Jersey City, NJ</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-1 text-cyan-500"></i>
+                            <span>hello@clevanta.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-1 text-cyan-500"></i>
+                            <span>+1 (630)-452-9883</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 Clevanta Consulting. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="tos.html" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
