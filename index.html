@@ -79,6 +79,11 @@
       <div id="mobileMenu"
      class="hidden md:hidden bg-white border-t border-slate-100
             absolute top-20 left-0 w-full z-[9999]">
+          <script>
+document.querySelector(".menu-toggle").addEventListener("click", function() {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
+</script>
             <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
                 <a href="expertise.html" class="block text-slate-600 hover:text-primary font-medium transition-colors text-base py-2">Expertise</a>
                 <a href="philosophy.html" class="block text-slate-600 hover:text-primary font-medium transition-colors text-base py-2">Philosophy</a>
