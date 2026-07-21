@@ -105,307 +105,348 @@
 
 
 
-    <!-- Hero Section -->
-    <section id="hero" class="relative pt-20 h-[600px] w-full overflow-hidden">
-        <div class="absolute inset-0 bg-primary/80 z-10"></div>
-        <div class="absolute inset-0 z-0">
-             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Team collaborating" class="w-full h-full object-cover opacity-60 mix-blend-overlay">
-        </div>
-        
-        <div class="relative z-20 max-w-[1440px] mx-auto px-8 h-full flex flex-col justify-center">
-            <div class="max-w-3xl">
-                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                    Our <span class="text-cyan-400">Expertise</span>
+   <!-- Page Hero -->
+    <section id="page-hero" class="pt-[140px] pb-[72px] relative overflow-hidden" style="background: linear-gradient(160deg, #f8fafc 0%, #e0f2fe 60%, #ffffff 100%);">
+        <!-- Decorative blobs -->
+        <div class="absolute -top-20 -right-20 w-[480px] h-[480px] rounded-full opacity-10" style="background: radial-gradient(circle, #06b6d4, transparent 70%);"></div>
+        <div class="absolute bottom-0 left-0 w-[320px] h-[320px] rounded-full opacity-10" style="background: radial-gradient(circle, #164e63, transparent 70%);"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-white border border-brand-200 rounded-full px-4 py-1.5 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-accent-cyan inline-block"></span>
+                    <span class="text-[13px] font-semibold text-accent-secondary tracking-wide uppercase">Our Services</span>
+                </div>
+                <h1 class="text-[52px] md:text-[64px] font-extrabold text-brand-900 leading-[1.08] tracking-[-1.5px] mb-5">
+                    Everything You Need to <span class="text-accent-primary">Win on Social</span>
                 </h1>
-                <p class="text-xl text-slate-200 leading-relaxed max-w-2xl">
-                    Deep capabilities across enterprise strategy, architecture, design, and IT consulting. We bring senior-level expertise to every engagement.
+                <p class="text-[18px] text-brand-600 leading-relaxed mb-8 max-w-xl">
+                    From strategy to execution, we offer a complete suite of social media marketing services designed to grow your audience, elevate your brand, and drive real revenue.
                 </p>
+                <div class="flex flex-wrap gap-3">
+                   
+                    <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand-700 border border-brand-300 px-6 py-3 rounded-[6px] font-semibold text-[15px] hover:bg-brand-50 transition-colors">
+                        Talk to an Expert
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 1: Enterprise Strategy -->
-    <section id="strategy-section" class="py-24 bg-white">
-        <div class="max-w-[1440px] mx-auto px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <div class="order-1 lg:order-1">
-                    <span class="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">Enterprise Strategy</span>
-                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Aligning Technology with Business Vision</h2>
-                    
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        Our enterprise strategy practice helps organizations navigate complex digital transformations with confidence. We work at the intersection of business goals and technology capabilities, ensuring your roadmap is both ambitious and achievable.
-                    </p>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        From C-suite advisory to portfolio rationalization, we bring senior-level strategic thinking that considers not just what's possible, but what's right for your organization's unique context and culture.
-                    </p>
+    <!-- Stats Bar -->
+    <section id="stats-bar" class="bg-accent-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">350+</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Brands Served</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">4.8×</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Avg. ROAS</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">2.1B+</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Impressions Delivered</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">98%</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Client Retention</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="space-y-6 mb-10">
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Digital Transformation Roadmaps</h4>
-                                <p class="text-sm text-slate-500">Multi-year strategic plans that balance innovation with operational stability.</p>
-                            </div>
+    <!-- Service Filter Tabs -->
+    <section id="service-list" class="py-[80px] bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-12">
+                <span class="text-accent-secondary font-bold text-[13px] tracking-wider uppercase mb-3 block">What We Do</span>
+                <h2 class="text-[38px] font-extrabold text-brand-900 leading-tight mb-3">Our Core Services</h2>
+                <p class="text-[16px] text-brand-500 max-w-xl mx-auto">Hand-pick the solutions your brand needs, or let us build a custom integrated strategy.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12" id="tab-group">
+                <button onclick="filterCards('all', this)" class="tab-btn active text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 hover:bg-accent-primary hover:text-white hover:border-accent-primary">All Services</button>
+                <button onclick="filterCards('organic', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Organic Growth</button>
+                <button onclick="filterCards('paid', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Paid Media</button>
+                <button onclick="filterCards('creative', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Creative</button>
+                <button onclick="filterCards('analytics', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Analytics</button>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6" id="cards-grid">
+
+                <!-- Content Creation -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="creative">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-blue-50 flex items-center justify-center">
+                            <i class="fa-solid fa-pen-nib text-accent-blue text-2xl"></i>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Technology Portfolio Optimization</h4>
-                                <p class="text-sm text-slate-500">Rationalize systems, reduce complexity, and focus investment on strategic capabilities.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-blue-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Executive Advisory & Coaching</h4>
-                                <p class="text-sm text-slate-500">Trusted counsel for CTOs, CIOs, and technology leaders navigating change.</p>
-                            </div>
-                        </div>
+                        <span class="text-[11px] font-bold text-accent-blue bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider">Creative</span>
                     </div>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Content Creation</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Thumb-stopping, platform-native content built to perform. From short-form video and Reels to carousels, static graphics, and long-form posts — we craft every piece to drive engagement and reflect your unique brand voice.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Short-form video & Reels</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Branded graphics & carousels</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Caption & hashtag strategy</li>
+                    </ul>
+                    
 
+                <!-- Social Strategy -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-teal-50 flex items-center justify-center">
+                            <i class="fa-solid fa-map text-teal-600 text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-teal-700 bg-teal-50 px-3 py-1 rounded-full uppercase tracking-wider">Organic</span>
+                    </div>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Social Media Strategy</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        A roadmap built from deep audience research, competitor analysis, and platform insights. We define your positioning, content pillars, and KPIs so every post has purpose and every campaign has direction.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Platform & audience audit</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Content pillar development</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Editorial calendar planning</li>
+                    </ul>
                    
                 </div>
 
-                <div class="order-2 lg:order-2 h-full">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
-                        <img src="images/meeting2.jpg.webp" alt="Business strategy meeting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <!-- Paid Social Ads -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="paid">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-cyan-50 flex items-center justify-center">
+                            <i class="fa-solid fa-bullseye text-accent-cyan text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-accent-secondary bg-cyan-50 px-3 py-1 rounded-full uppercase tracking-wider">Paid Media</span>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: Architecture Consulting -->
-    <section id="architecture-section" class="py-24 bg-slate-50">
-        <div class="max-w-[1440px] mx-auto px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <div class="order-2 lg:order-1 h-full">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
-                        <img src="images/meeting3.jpg.avif" alt="Architecture planning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-                </div>
-
-                <div class="order-1 lg:order-2">
-                    <span class="inline-block px-4 py-1.5 bg-teal-50 text-teal-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">Architecture Consulting</span>
-                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Building Scalable, Resilient Systems</h2>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Paid Social Advertising</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Precision-targeted ad campaigns across Meta, TikTok, LinkedIn, Pinterest, and X. We manage everything — from creative to bidding — maximising ROAS and scaling what works with rigorous A/B testing.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Meta & TikTok ad management</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Audience targeting & retargeting</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Conversion tracking & optimisation</li>
+                    </ul>
                     
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        Our architecture practice designs systems that grow with your business. We bring deep technical expertise combined with pragmatic business sense to create architectures that are robust, maintainable, and aligned with your strategic goals.
-                    </p>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        From cloud migration strategies to microservices design, we help you build the technical foundation that enables innovation while managing risk and complexity.
-                    </p>
 
-                    <div class="space-y-6 mb-10">
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Enterprise Architecture Design</h4>
-                                <p class="text-sm text-slate-500">Comprehensive architectural blueprints for complex enterprise systems.</p>
-                            </div>
+                <!-- Community Management -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-indigo-50 flex items-center justify-center">
+                            <i class="fa-solid fa-users text-indigo-600 text-2xl"></i>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Cloud Strategy & Migration</h4>
-                                <p class="text-sm text-slate-500">AWS, Azure, and GCP architecture with security and compliance built-in.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-teal-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Technical Debt Assessment</h4>
-                                <p class="text-sm text-slate-500">Identify, prioritize, and remediate architectural issues holding you back.</p>
-                            </div>
-                        </div>
+                        <span class="text-[11px] font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full uppercase tracking-wider">Organic</span>
                     </div>
-
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Community Management</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Your audience deserves real conversations. We monitor, respond, and engage daily — handling DMs, comments, and brand mentions to build loyalty, protect your reputation, and convert interactions into customers.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Daily comment & DM responses</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Brand sentiment monitoring</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Crisis response protocols</li>
+                    </ul>
                     
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: UX/UI Design -->
-    <section id="ux-section" class="py-24 bg-white">
-        <div class="max-w-[1440px] mx-auto px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <div class="order-1 lg:order-1">
-                    <span class="inline-block px-4 py-1.5 bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">UX/UI & Design</span>
-                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Human-Centered Enterprise Design</h2>
-                    
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        We bring design thinking into the enterprise. Our UX/UI practice ensures that complex systems are not just functional, but intuitive, accessible, and delightful to use. We bridge the gap between technical capability and human need.
-                    </p>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        From design systems to user research, we help organizations embed design excellence into their culture and processes, creating experiences that users love and that drive business outcomes.
-                    </p>
-
-                    <div class="space-y-6 mb-10">
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Enterprise Design Systems</h4>
-                                <p class="text-sm text-slate-500">Scalable component libraries and design standards for consistency at scale.</p>
-                            </div>
+                <!-- Influencer Marketing -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="creative">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-rose-50 flex items-center justify-center">
+                            <i class="fa-solid fa-star text-rose-500 text-2xl"></i>
                         </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">User Research & Testing</h4>
-                                <p class="text-sm text-slate-500">Evidence-based design decisions grounded in real user needs and behaviors.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-indigo-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Accessibility & Compliance</h4>
-                                <p class="text-sm text-slate-500">WCAG-compliant designs that work for all users, including those with disabilities.</p>
-                            </div>
-                        </div>
+                        <span class="text-[11px] font-bold text-rose-600 bg-rose-50 px-3 py-1 rounded-full uppercase tracking-wider">Creative</span>
                     </div>
-
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Influencer Marketing</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        We source, vet, and manage creator partnerships that align authentically with your brand. From nano-influencers to macro campaigns — we handle contracts, briefs, content approvals, and performance tracking end-to-end.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Creator sourcing & vetting</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Campaign briefing & management</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Performance & ROI reporting</li>
+                    </ul>
                    
                 </div>
 
-                <div class="order-2 lg:order-2 h-full">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
-                        <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80" alt="Design process" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <!-- Analytics & Reporting -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="analytics">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-sky-50 flex items-center justify-center">
+                            <i class="fa-solid fa-chart-pie text-sky-600 text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-sky-600 bg-sky-50 px-3 py-1 rounded-full uppercase tracking-wider">Analytics</span>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: IT Consulting -->
-    <section id="it-section" class="py-24 bg-slate-50">
-        <div class="max-w-[1440px] mx-auto px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                
-                <div class="order-2 lg:order-1 h-full">
-                    <div class="rounded-2xl overflow-hidden shadow-2xl h-[500px] w-full relative group">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="IT Consulting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
-                         <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                    </div>
-                </div>
-
-                <div class="order-1 lg:order-2">
-                    <span class="inline-block px-4 py-1.5 bg-orange-50 text-orange-700 text-xs font-bold uppercase tracking-wider rounded-full mb-6">IT Consulting</span>
-                    <h2 class="text-4xl font-bold text-primary mb-6 leading-tight">Pragmatic Technology Guidance</h2>
-                    
-                    <p class="text-slate-600 mb-6 leading-relaxed">
-                        Our IT consulting practice provides the steady hand needed to navigate complex technology decisions. From vendor selection to implementation oversight, we bring objectivity, experience, and a focus on outcomes.
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Analytics & Reporting</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        No vanity metrics. We deliver clear, jargon-free reports that show what's working, what's not, and what to do next. Monthly deep-dives, real-time dashboards, and actionable recommendations included.
                     </p>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        We help you cut through vendor hype, assess options objectively, and make decisions that align with your strategic goals and operational realities.
-                    </p>
-
-                    <div class="space-y-6 mb-10">
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Technology Vendor Selection</h4>
-                                <p class="text-sm text-slate-500">Objective evaluation and RFP management for major technology investments.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">Implementation Oversight</h4>
-                                <p class="text-sm text-slate-500">PMO support and quality assurance for critical IT initiatives.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="mt-1 w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center flex-shrink-0">
-                                <i class="fa-solid fa-check text-orange-600 text-xs"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-sm mb-1">IT Operating Model Design</h4>
-                                <p class="text-sm text-slate-500">Organizational design, governance, and process optimization for IT teams.</p>
-                            </div>
-                        </div>
-                    </div>
-
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Custom performance dashboards</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Monthly strategy reviews</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Competitor benchmarking</li>
+                    </ul>
                    
+
+                <!-- SEO & Social SEO -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-amber-50 flex items-center justify-center">
+                            <i class="fa-solid fa-magnifying-glass-chart text-amber-500 text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-amber-600 bg-amber-50 px-3 py-1 rounded-full uppercase tracking-wider">Organic</span>
+                    </div>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Social SEO & Profile Optimisation</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Social platforms are search engines. We optimise your bios, keywords, hashtags, and profile architecture so your brand is discoverable by the right people at the right moment — boosting organic reach without extra spend.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Profile & bio audit</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Hashtag & keyword research</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Cross-platform consistency</li>
+                    </ul>
+                    
+
+                <!-- Social Commerce -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="paid">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-emerald-50 flex items-center justify-center">
+                            <i class="fa-solid fa-bag-shopping text-emerald-600 text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full uppercase tracking-wider">Paid Media</span>
+                    </div>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Social Commerce & Shop Setup</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Turn your social profiles into storefronts. We set up and optimise Instagram Shopping, TikTok Shop, and Pinterest catalogs — creating frictionless paths from discovery to purchase without leaving the app.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Instagram & TikTok Shop setup</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Product catalogue management</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Shoppable content creation</li>
+                    </ul>
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Brand Reputation -->
+                <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="analytics">
+                    <div class="flex items-start justify-between mb-6">
+                        <div class="service-icon w-14 h-14 rounded-xl bg-purple-50 flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-purple-600 text-2xl"></i>
+                        </div>
+                        <span class="text-[11px] font-bold text-purple-600 bg-purple-50 px-3 py-1 rounded-full uppercase tracking-wider">Analytics</span>
+                    </div>
+                    <h3 class="text-[20px] font-bold text-brand-900 mb-3">Brand Monitoring & Reputation</h3>
+                    <p class="text-[15px] text-brand-500 leading-relaxed mb-6 flex-grow">
+                        Know what people are saying about your brand in real time. We track mentions, sentiment, and trends across every platform — giving you the intelligence to act fast and protect the brand equity you've built.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> 24/7 social listening</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Sentiment trend analysis</li>
+                        <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Proactive reputation management</li>
+                    </ul>
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Our Approach Section -->
-    <section id="approach-section" class="py-24 bg-primary text-white">
-        <div class="max-w-[1440px] mx-auto px-8 text-center">
-            <h2 class="text-4xl font-bold mb-4">Our Approach</h2>
-            <p class="text-slate-300 max-w-2xl mx-auto mb-16">
-                A proven methodology built on relationship-driven growth and thoughtful execution.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
-                <!-- Connecting Line (Desktop) -->
-                <div class="hidden md:block absolute top-6 left-[12.5%] right-[12.5%] h-0.5 bg-slate-700 -z-0"></div>
-
-                <!-- Step 1 -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">1</div>
-                    <h3 class="font-bold text-lg mb-3">Listen & Understand</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed px-4">Deep discovery to understand your context, challenges, and aspirations.</p>
+    <!-- Platform Expertise -->
+    <section id="platforms" class="py-[80px] bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-accent-secondary font-bold text-[13px] tracking-wider uppercase mb-3 block">Platform Expertise</span>
+                <h2 class="text-[34px] font-extrabold text-brand-900 mb-3">We Live Where Your Audience Does</h2>
+                <p class="text-[15px] text-brand-500 max-w-lg mx-auto">Certified specialists across every major social platform — always up-to-date with the latest algorithm changes and features.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-instagram text-4xl" style="background: linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); -webkit-background-clip:text; -webkit-text-fill-color:transparent;"></i>
+                    <span class="text-[13px] font-bold text-brand-700">Instagram</span>
                 </div>
-
-                <!-- Step 2 -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">2</div>
-                    <h3 class="font-bold text-lg mb-3">Analyze & Design</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed px-4">Collaborative design of solutions that fit your organization's reality.</p>
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-tiktok text-4xl text-brand-900"></i>
+                    <span class="text-[13px] font-bold text-brand-700">TikTok</span>
                 </div>
-
-                <!-- Step 3 -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">3</div>
-                    <h3 class="font-bold text-lg mb-3">Execute & Deliver</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed px-4">Hands-on implementation with clear milestones and continuous feedback.</p>
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-facebook text-4xl text-blue-600"></i>
+                    <span class="text-[13px] font-bold text-brand-700">Facebook</span>
                 </div>
-
-                <!-- Step 4 -->
-                <div class="relative z-10">
-                    <div class="w-12 h-12 bg-blue-900 rounded-lg flex items-center justify-center mx-auto mb-6 text-xl font-bold shadow-lg shadow-blue-900/50">4</div>
-                    <h3 class="font-bold text-lg mb-3">Sustain & Grow</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed px-4">Knowledge transfer and ongoing partnership to ensure lasting impact.</p>
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-linkedin text-4xl text-blue-700"></i>
+                    <span class="text-[13px] font-bold text-brand-700">LinkedIn</span>
+                </div>
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-youtube text-4xl text-red-600"></i>
+                    <span class="text-[13px] font-bold text-brand-700">YouTube</span>
+                </div>
+                <div class="bg-white rounded-2xl p-6 flex flex-col items-center gap-3 border border-brand-100 hover:shadow-md transition-shadow">
+                    <i class="fa-brands fa-pinterest text-4xl text-red-500"></i>
+                    <span class="text-[13px] font-bold text-brand-700">Pinterest</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Process / How It Works -->
+    <section id="process" class="py-[96px] bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-accent-secondary font-bold text-[13px] tracking-wider uppercase mb-3 block">How It Works</span>
+                <h2 class="text-[34px] font-extrabold text-brand-900 mb-3">From Day One to Done Right</h2>
+                <p class="text-[15px] text-brand-500 max-w-lg mx-auto">Our proven onboarding and delivery process means you see results fast, with zero guesswork on your end.</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+                <!-- Connector line (desktop) -->
+                <div class="hidden lg:block absolute top-[42px] left-[calc(12.5%+2rem)] right-[calc(12.5%+2rem)] h-[2px] bg-brand-100 z-0"></div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-accent-light border-4 border-white shadow-md flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-binoculars text-accent-primary text-2xl"></i>
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-accent-primary text-white text-[12px] font-bold flex items-center justify-center mb-4">1</div>
+                    <h4 class="font-bold text-brand-900 text-[17px] mb-2">Discovery & Audit</h4>
+                    <p class="text-[14px] text-brand-500 leading-relaxed">We deep-dive into your brand, audience, competitors, and current social footprint.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-accent-light border-4 border-white shadow-md flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-compass-drafting text-accent-primary text-2xl"></i>
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-accent-primary text-white text-[12px] font-bold flex items-center justify-center mb-4">2</div>
+                    <h4 class="font-bold text-brand-900 text-[17px] mb-2">Strategy & Planning</h4>
+                    <p class="text-[14px] text-brand-500 leading-relaxed">Custom 90-day roadmap with content pillars, channel mix, and success metrics defined.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-accent-light border-4 border-white shadow-md flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-rocket text-accent-primary text-2xl"></i>
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-accent-primary text-white text-[12px] font-bold flex items-center justify-center mb-4">3</div>
+                    <h4 class="font-bold text-brand-900 text-[17px] mb-2">Launch & Execute</h4>
+                    <p class="text-[14px] text-brand-500 leading-relaxed">Content goes live on schedule. Ads go live. Communities start growing from day one.</p>
+                </div>
+
+                <div class="relative z-10 flex flex-col items-center text-center">
+                    <div class="w-20 h-20 rounded-full bg-accent-light border-4 border-white shadow-md flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-arrows-rotate text-accent-primary text-2xl"></i>
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-accent-primary text-white text-[12px] font-bold flex items-center justify-center mb-4">4</div>
+                    <h4 class="font-bold text-brand-900 text-[17px] mb-2">Optimise & Scale</h4>
+                    <p class="text-[14px] text-brand-500 leading-relaxed">Monthly reviews, data-led pivots, and continuous scaling of what delivers results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- CTA Section -->
     <section id="cta-section" class="py-20 bg-gradient-to-br from-blue-600 to-cyan-500">
