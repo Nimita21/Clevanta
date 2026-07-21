@@ -105,7 +105,7 @@
 
 
 
-   <!-- Page Hero -->
+    <!-- Page Hero -->
     <section id="page-hero" class="pt-[140px] pb-[72px] relative overflow-hidden" style="background: linear-gradient(160deg, #f8fafc 0%, #e0f2fe 60%, #ffffff 100%);">
         <!-- Decorative blobs -->
         <div class="absolute -top-20 -right-20 w-[480px] h-[480px] rounded-full opacity-10" style="background: radial-gradient(circle, #06b6d4, transparent 70%);"></div>
@@ -124,8 +124,10 @@
                     From strategy to execution, we offer a complete suite of social media marketing services designed to grow your audience, elevate your brand, and drive real revenue.
                 </p>
                 <div class="flex flex-wrap gap-3">
-                   
-                    <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand-700 border border-brand-300 px-6 py-3 rounded-[6px] font-semibold text-[15px] hover:bg-brand-50 transition-colors">
+                    <a href="#service-list" class="inline-flex items-center gap-2 bg-accent-primary text-white px-6 py-3 rounded-[6px] font-semibold text-[15px] hover:bg-brand-900 transition-colors">
+                        Explore Services <i class="fa-solid fa-arrow-down text-sm"></i>
+                    </a>
+                    <a href="#cta" class="inline-flex items-center gap-2 bg-white text-brand-700 border border-brand-300 px-6 py-3 rounded-[6px] font-semibold text-[15px] hover:bg-brand-50 transition-colors">
                         Talk to an Expert
                     </a>
                 </div>
@@ -133,7 +135,29 @@
         </div>
     </section>
 
-   
+    <!-- Stats Bar -->
+    <section id="stats-bar" class="bg-accent-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">350+</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Brands Served</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">4.8×</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Avg. ROAS</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">2.1B+</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Impressions Delivered</p>
+                </div>
+                <div>
+                    <p class="text-[32px] font-extrabold text-white leading-none">98%</p>
+                    <p class="text-[13px] text-blue-200 mt-1 font-medium">Client Retention</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Service Filter Tabs -->
     <section id="service-list" class="py-[80px] bg-white">
@@ -152,6 +176,7 @@
                 <button onclick="filterCards('paid', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Paid Media</button>
                 <button onclick="filterCards('creative', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Creative</button>
                 <button onclick="filterCards('analytics', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Analytics</button>
+                <button onclick="filterCards('webdesign', this)" class="tab-btn text-[14px] font-semibold px-5 py-2 rounded-full border border-brand-200 text-brand-600 hover:bg-accent-primary hover:text-white hover:border-accent-primary">Web Design</button>
             </div>
 
             <!-- Service Cards Grid -->
@@ -174,7 +199,8 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Branded graphics & carousels</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Caption & hashtag strategy</li>
                     </ul>
-                    
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
 
                 <!-- Social Strategy -->
                 <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
@@ -193,7 +219,7 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Content pillar development</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Editorial calendar planning</li>
                     </ul>
-                   
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
                 <!-- Paid Social Ads -->
@@ -213,7 +239,8 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Audience targeting & retargeting</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Conversion tracking & optimisation</li>
                     </ul>
-                    
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
 
                 <!-- Community Management -->
                 <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
@@ -232,7 +259,7 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Brand sentiment monitoring</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Crisis response protocols</li>
                     </ul>
-                    
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
                 <!-- Influencer Marketing -->
@@ -252,7 +279,7 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Campaign briefing & management</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Performance & ROI reporting</li>
                     </ul>
-                   
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
                 <!-- Analytics & Reporting -->
@@ -272,7 +299,8 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Monthly strategy reviews</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Competitor benchmarking</li>
                     </ul>
-                   
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
 
                 <!-- SEO & Social SEO -->
                 <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="organic">
@@ -291,7 +319,8 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Hashtag & keyword research</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Cross-platform consistency</li>
                     </ul>
-                    
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
 
                 <!-- Social Commerce -->
                 <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="paid">
@@ -333,9 +362,7 @@
                     <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
-            </div>
-        </div>
-    <!-- Web Design -->
+                <!-- Web Design -->
                 <div class="service-card group bg-white border border-brand-100 rounded-2xl p-8 hover:shadow-xl hover:border-accent-cyan/30 transition-all duration-300 flex flex-col" data-category="webdesign">
                     <div class="flex items-start justify-between mb-6">
                         <div class="service-icon w-14 h-14 rounded-xl bg-violet-50 flex items-center justify-center">
@@ -352,7 +379,7 @@
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Landing pages & full websites</li>
                         <li class="flex items-center gap-2 text-[13px] text-brand-600"><i class="fa-solid fa-check text-accent-cyan text-xs"></i> Mobile-first & SEO-ready builds</li>
                     </ul>
-                  
+                    <a href="#cta" class="inline-flex items-center gap-2 text-accent-primary font-semibold text-[14px] group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right text-xs"></i></a>
                 </div>
 
             </div>
@@ -447,22 +474,83 @@
         </div>
     </section>
 
-
-    <!-- CTA Section -->
-    <section id="cta-section" class="py-20 bg-gradient-to-br from-blue-600 to-cyan-500">
-        <div class="max-w-[1440px] mx-auto px-8 text-center">
-            <h2 class="text-4xl font-bold text-white mb-4">Ready to Transform Your Enterprise?</h2>
-            <p class="text-xl text-blue-50 mb-10 max-w-2xl mx-auto">
-                Let's discuss how our expertise can help you achieve your strategic goals.
-            </p>
-            <div class="flex gap-4 justify-center">
-                <a href="contact.html" class="bg-white text-blue-600 font-semibold px-8 py-3.5 rounded-lg hover:bg-slate-50 transition-colors shadow-lg">Schedule a Consultation</a>
-                
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-[80px] bg-brand-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-accent-secondary font-bold text-[13px] tracking-wider uppercase mb-3 block">Client Love</span>
+                <h2 class="text-[34px] font-extrabold text-brand-900 mb-3">Brands Growing with SocialSync</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-8 border border-brand-100 shadow-sm">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                    </div>
+                    <p class="text-[15px] text-brand-600 leading-relaxed mb-6 italic">"SocialSync took our Instagram from 8k to 85k followers in 9 months. Our paid ads now generate 5× ROAS consistently. Couldn't recommend them more."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" class="w-10 h-10 rounded-full object-cover" alt="Avatar">
+                        <div>
+                            <p class="text-[14px] font-bold text-brand-900">Priya Mehta</p>
+                            <p class="text-[12px] text-brand-400">CMO, LumiWear</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-brand-100 shadow-sm">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                    </div>
+                    <p class="text-[15px] text-brand-600 leading-relaxed mb-6 italic">"Their content team is exceptional. Every post feels on-brand and actually drives engagement. The monthly reports are clear and give us real confidence."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg" class="w-10 h-10 rounded-full object-cover" alt="Avatar">
+                        <div>
+                            <p class="text-[14px] font-bold text-brand-900">James Oduya</p>
+                            <p class="text-[12px] text-brand-400">Founder, Stackr Finance</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl p-8 border border-brand-100 shadow-sm">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i><i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                    </div>
+                    <p class="text-[15px] text-brand-600 leading-relaxed mb-6 italic">"The influencer campaign they ran generated more UGC in one month than we'd collected in 2 years. Our brand reach tripled and conversions are up 40%."</p>
+                    <div class="flex items-center gap-3">
+                        <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" class="w-10 h-10 rounded-full object-cover" alt="Avatar">
+                        <div>
+                            <p class="text-[14px] font-bold text-brand-900">Natalie Park</p>
+                            <p class="text-[12px] text-brand-400">Head of Growth, NovaNest</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-     <!-- Footer -->
+    <!-- CTA Section -->
+    <section id="cta" class="py-[96px] bg-accent-primary relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10" style="background: radial-gradient(ellipse at 80% 50%, #06b6d4 0%, transparent 60%);"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
+                <span class="w-2 h-2 rounded-full bg-accent-cyan inline-block"></span>
+                <span class="text-[13px] font-semibold text-blue-200 tracking-wide uppercase">Start Today</span>
+            </span>
+            <h2 class="text-[42px] md:text-[52px] font-extrabold text-white leading-[1.08] tracking-[-1.2px] mb-5">
+                Ready to Transform Your Social Presence?
+            </h2>
+            <p class="text-[17px] text-blue-200 leading-relaxed mb-10 max-w-2xl mx-auto">
+                Get a free, no-obligation social media audit from our team. We'll identify your biggest opportunities and show you exactly how we'd grow your brand.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="inline-flex justify-center items-center gap-2 bg-white text-accent-primary px-8 py-4 rounded-[6px] font-bold text-[16px] hover:bg-brand-50 transition-colors">
+                    <i class="fa-solid fa-calendar-check"></i> Book a Free Audit
+                </a>
+                <a href="#" class="inline-flex justify-center items-center gap-2 border-2 border-white/30 text-white px-8 py-4 rounded-[6px] font-semibold text-[16px] hover:bg-white/10 transition-colors">
+                    View Case Studies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
      <footer id="footer" class="bg-[#0b1120] text-slate-300 pt-16 pb-8 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
